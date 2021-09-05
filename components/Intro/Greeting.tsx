@@ -1,7 +1,8 @@
-import { Box, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
+// Components
+import { Box, Stack, Text } from '@chakra-ui/react'
 import Contact from '../Contact'
-
+// Data
 import { greeting } from '../../data'
 
 export default function Greeting() {

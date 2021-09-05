@@ -1,16 +1,16 @@
-import { Box, Text, Grid } from '@chakra-ui/layout'
 import React from 'react'
+import { Box, Text, Grid } from '@chakra-ui/layout'
 import Card from './Card/ProjectCard'
 import Title from './Title'
 import { projects } from '../data/index'
 
-export default function Projects() {
+const Projects: React.FC = () => {
     return (
         <Box mt="20">
             <section id='projects'>
                 <Title title="Projects" />
                 <Grid templateColumns="repeat(3, 1fr)" gap={6} mt={3}>
-                    {projects.data.map((p,i) => <Card
+                    {projects.data?.map((p,i) => <Card
                         links={p.links ? p.links : []}
                         isMobile={p.isMobile}
                         key={p.projectName + i}
@@ -25,3 +25,5 @@ export default function Projects() {
         </Box>
     )
 }
+
+export default Projects

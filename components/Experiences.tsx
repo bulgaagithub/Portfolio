@@ -1,10 +1,12 @@
-import { Box, Grid } from '@chakra-ui/layout'
 import React from 'react'
+// Components
+import { Box, Grid } from '@chakra-ui/layout'
 import Title from './Title'
-import { workExperiences } from '../data'
 import ExperienceCard from './Card/ExperienceCard'
+// Data
+import { workExperiences } from '../data'
 
-export default function Experiences() {
+const  Experiences: React.FC = () => {
     if (!workExperiences.display) {
         return null;
     }
@@ -20,3 +22,5 @@ export default function Experiences() {
         </Box>
     )
 }
+
+export default Experiences

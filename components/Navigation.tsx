@@ -1,4 +1,5 @@
 import React from 'react'
+// Components
 import {
     Box,
     Flex,
@@ -11,10 +12,11 @@ import {
     Stack,
     Text
 } from '@chakra-ui/react'
-
+// Icons
 import { FaMoon, FaSun, FaHamburger, FaWindowClose } from 'react-icons/fa'
+// Data
 import { Links, MainLogo } from '../data'
-
+// Types
 type Props = {
     title: any,
     href: string
@@ -35,7 +37,7 @@ const NavLink: React.FC<Props> = ({ title, href }) => (
     </Link>
 )
 
-export default function Navigation() {
+const Navigation: React.FC = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const { toggleColorMode } = useColorMode()
     const text = useColorModeValue('dark', 'light')
@@ -100,3 +102,5 @@ export default function Navigation() {
         </>
     )
 }
+
+export default Navigation

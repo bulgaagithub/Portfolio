@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 interface TitleProps {
     readonly showScroll: boolean;
-  }
+}
 
 export const TopButton = styled.button<TitleProps>`
     display: ${props => props.showScroll  ?  'flex' : 'none'};

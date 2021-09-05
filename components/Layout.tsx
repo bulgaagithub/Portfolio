@@ -1,4 +1,5 @@
 import React from 'react'
+// Components
 import { Container } from '@chakra-ui/react'
 
 const Layout: React.FC = ({ children }) => {

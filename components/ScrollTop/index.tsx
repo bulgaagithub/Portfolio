@@ -1,10 +1,12 @@
-import { useColorMode } from '@chakra-ui/color-mode';
 import React, { useEffect, useState } from 'react'
+// Hooks
+import { useColorMode } from '@chakra-ui/color-mode'
+// Icons
 import { FaHandPointUp } from 'react-icons/fa'
+// Styled Components
 import { TopButton } from './styles'
 
-export default function ScrollTop() {
-
+const ScrollTop = () => {
     const [showScroll, setShowScroll] = useState(false)
 
     const checkScrollTop = () => {
@@ -42,3 +44,5 @@ export default function ScrollTop() {
         </>
     )
 }
+
+export default ScrollTop

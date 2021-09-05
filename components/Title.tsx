@@ -1,6 +1,7 @@
-import { Text } from '@chakra-ui/layout'
 import React from 'react'
-
+// Components
+import { Text } from '@chakra-ui/layout'
+// Types
 type Props = {
     title: string
 }

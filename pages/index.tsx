@@ -1,5 +1,7 @@
-import { Box, Flex } from '@chakra-ui/react'
+import React from 'react'
 import type { NextPage } from 'next'
+// Components
+import { Box, Flex } from '@chakra-ui/react'
 import Avatar from '../components/Avatar'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout'
@@ -8,9 +10,8 @@ import Skills from '../components/Skills'
 import Experiences from '../components/Experiences'
 import ScrollTop from '../components/ScrollTop'
 import DisplayLottie from '../components/Intro/DisplayLottie'
-import React from 'react'
 import Greeting from '../components/Intro/Greeting'
-
+// Data
 import { illustration } from '../data'
 
 const Home: NextPage = () => {

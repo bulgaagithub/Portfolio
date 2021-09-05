@@ -1,9 +1,11 @@
-import { IconButton } from '@chakra-ui/button';
-import { Link, Stack } from '@chakra-ui/layout';
 import React from 'react'
+// Components
+import { Link, Stack } from '@chakra-ui/layout';
+// Icons
 import { SiLinkedin, SiGithub, SiGmail, SiGitlab } from "react-icons/si";
+// Data
 import { socialMediaLinks } from '../data';
-export default function Contact() {
+const Contact: React.FC = () => {
     if (!socialMediaLinks.display) {
         return null;
     }
@@ -29,3 +31,5 @@ export default function Contact() {
         </div>
     )
 }
+
+export default Contact

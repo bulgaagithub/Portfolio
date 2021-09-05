@@ -1,7 +1,8 @@
-import { Box, Divider, Flex } from '@chakra-ui/layout'
 import React from 'react'
+// Components
+import { Box, Flex } from '@chakra-ui/layout'
 
-export default function Footer() {
+const Footer: React.FC = () => {
     return (
         <Box mt={20}>
             <Flex justifyContent="center" alignItems="center" p={5}>
@@ -10,3 +11,5 @@ export default function Footer() {
         </Box>
     )
 }
+
+export default Footer
