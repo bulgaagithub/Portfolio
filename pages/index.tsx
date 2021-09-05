@@ -1,0 +1,42 @@
+import { Box, Flex } from '@chakra-ui/react'
+import type { NextPage } from 'next'
+import Avatar from '../components/Avatar'
+import SEO from '../components/SEO'
+import Layout from '../components/Layout'
+import Projects from '../components/Projects'
+import Skills from '../components/Skills'
+import Experiences from '../components/Experiences'
+import ScrollTop from '../components/ScrollTop'
+import DisplayLottie from '../components/Intro/DisplayLottie'
+import React from 'react'
+import Greeting from '../components/Intro/Greeting'
+
+import { illustration } from '../data'
+
+const Home: NextPage = () => {
+    return (
+        <>
+            <SEO
+                title="Portfolio"
+                meta_name="description"
+                content="Software Developer Portfolio inspired by https://github.com/saadpasta/developerFolio"
+            />
+            <Layout>
+                <Flex justify="center" mt="10%" direction={{ sm: "column", md: "row" }} align="center" px={{ sm: "20px" }}>
+                    <Box flexGrow={1} flexShrink={0}>
+                        {illustration ? <DisplayLottie /> : <Avatar />}
+                    </Box>
+                    <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+                        <Greeting />
+                    </Box>
+                </Flex>
+                <Skills />
+                <Experiences />
+                <Projects />
+            </Layout>
+            <ScrollTop />
+        </>
+    )
+}
+
+export default Home
