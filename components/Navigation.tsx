@@ -16,11 +16,11 @@ import { FaMoon, FaSun, FaHamburger, FaWindowClose } from 'react-icons/fa'
 import { Links, MainLogo } from '../data'
 
 type Props = {
-    children: any,
+    title: any,
     href: string
 }
 
-const NavLink: React.FC<Props> = ({ children, href }) => (
+const NavLink: React.FC<Props> = ({ title, href }) => (
     <Link
         px={2}
         py={1}
@@ -31,7 +31,7 @@ const NavLink: React.FC<Props> = ({ children, href }) => (
         }}
         href={href}
     >
-        {children}
+        {title}
     </Link>
 )
 
@@ -71,7 +71,7 @@ export default function Navigation() {
                     <HStack spacing={8} alignItems={'center'}>
                         <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
                             {Links.map((link) => (
-                                <NavLink key={link.name} children={link.name} href={link.link} />
+                                <NavLink key={link.name} title={link.name} href={link.link} />
                             ))}
                         </HStack>
                     </HStack>
@@ -92,7 +92,7 @@ export default function Navigation() {
                 <Box pb={4} display={{ md: 'none' }}>
                     <Stack as={'nav'} spacing={4}>
                         {Links.map((link) => (
-                            <NavLink key={link.name} children={link.name} href={link.link} />
+                            <NavLink key={link.name} title={link.name} href={link.link} />
                         ))}
                     </Stack>
                 </Box>

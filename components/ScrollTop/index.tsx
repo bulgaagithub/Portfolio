@@ -32,7 +32,7 @@ export default function ScrollTop() {
             <TopButton
                 showScroll={showScroll}
                 color={colorMode}
-                aria-label="true" 
+                aria-label="Scroll Top Button" 
                 onClick={scrollTop} 
                 title="Go to top"
                 className=""
