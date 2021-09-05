@@ -1,15 +1,15 @@
 import React from 'react'
-import { Box, Text, Grid } from '@chakra-ui/layout'
+import { Box, Text, SimpleGrid } from '@chakra-ui/layout'
 import Card from './Card/ProjectCard'
 import Title from './Title'
 import { projects } from '../data/index'
 
 const Projects: React.FC = () => {
     return (
-        <Box mt="20">
+        <Box mt={[10, 20]}>
             <section id='projects'>
                 <Title title="Projects" />
-                <Grid templateColumns="repeat(3, 1fr)" gap={6} mt={3}>
+                <SimpleGrid columns={[1, 2, 3]} spacing={6} mt={3}>
                     {projects.data?.map((p,i) => <Card
                         links={p.links ? p.links : []}
                         isMobile={p.isMobile}
@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
                         tech={p.tech}
                         description={p.projectDesc}
                     />)}
-                </Grid>
+                </SimpleGrid>
             </section>
         </Box>
     )

@@ -52,7 +52,7 @@ const Navigation: React.FC = () => {
                     color='current'
                     icon={isOpen ? <FaWindowClose /> : <FaHamburger />}
                     aria-label={'Open Menu'}
-                    display={{ md: 'none' }}
+                    display={['flex', 'flex','none']}
                     onClick={isOpen ? onClose : onOpen}
                 />
                 <HStack spacing={8} alignItems={'center'}>
@@ -91,7 +91,7 @@ const Navigation: React.FC = () => {
             </Flex>
 
             {isOpen ? (
-                <Box pb={4} display={{ md: 'none' }}>
+                <Box pb={4} display={{ md: 'none' }} px={4}>
                     <Stack as={'nav'} spacing={4}>
                         {Links.map((link) => (
                             <NavLink key={link.name} title={link.name} href={link.link} />

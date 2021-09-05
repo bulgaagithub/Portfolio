@@ -23,11 +23,11 @@ const Home: NextPage = () => {
                 content="Software Developer Portfolio inspired by https://github.com/saadpasta/developerFolio"
             />
             <Layout>
-                <Flex justify="center" mt="10%" direction={{ sm: "column", md: "row" }} align="center" px={{ sm: "20px" }}>
+                <Flex justify="center" mt="10%" alignSelf="flex-start" direction={["column", null, "row"]} align="center" px={{ sm: "20px" }}>
                     <Box flexGrow={1} flexShrink={0}>
                         {illustration ? <DisplayLottie /> : <Avatar />}
                     </Box>
-                    <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+                    <Box mt={[1,0]} ml={{ md: 6 }}>
                         <Greeting />
                     </Box>
                 </Flex>

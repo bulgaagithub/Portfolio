@@ -7,7 +7,7 @@ import { skillsSection } from '../data/index'
 
 const Skills: React.FC = () => {
     return (
-        <Box mt="16">
+        <Box mt={[8,16]}>
             <section id="skills">
                 <Title title={skillsSection.title} />
                 {/* <Text textAlign="center" mt={3}>{skillsSection.subTitle}</Text> */}

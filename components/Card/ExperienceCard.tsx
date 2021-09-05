@@ -16,18 +16,15 @@ const ExperienceCard: React.FC<Props> = ({ role, company, desc, date }) => {
         <Flex justifyContent='space-between' flexDirection='column'
             rounded='lg' boxShadow='lg'
             bg={useColorModeValue('whiteAlpha.100', 'gray.700')}
-            _hover={{ boxShadow: useColorModeValue('1px 1px 3px 2px #d2d2d2', '1px 1px 5px 2px #fff') }}>
-            <Box flexGrow={1} borderTop='2'>
-                <Box bg={useColorModeValue('white', 'whiteAlpha.100')} roundedTop='lg' p='16'>
-                    <Text textAlign='center' fontSize='lg' fontWeight='extrabold'>{company}</Text>
-                </Box>
-                <Box p={4} >
-                    <Text fontSize='md'>{role}</Text>
-                    <Text fontSize='sm'>{date}</Text>
-                    <Text textAlign='justify' fontSize='0.7rem'>{desc}</Text>
-                </Box>
+            _hover={{ boxShadow: useColorModeValue('1px 1px 3px 2px #d2d2d2', '1px 1px 5px 2px #fff') }}
+            >
+            <Box flexGrow={1} roundedTop='lg' bg={useColorModeValue('white', 'whiteAlpha.100')} p='16'>
+                <Text textAlign='center' fontSize='lg' fontWeight='extrabold'>{company}</Text>
             </Box>
-            <Box px={4} py={2}>
+            <Box p={4} >
+                <Text fontSize='md'>{role}</Text>
+                <Text fontSize='sm'>{date}</Text>
+                <Text textAlign='justify' fontSize='0.7rem'>{desc}</Text>
             </Box>
         </Flex>
     )
