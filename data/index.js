@@ -229,9 +229,9 @@ const workExperiences = {
     },
     {
       role: "Software Developer",
-      company: "iHotel LLC",
+      company: "Vadda LLC",
       //   companylogo: require("./assets/images/facebookLogo.png"),
-      date: "April 2021 – Present",
+      date: "February 2020 – Present",
       desc: "",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
