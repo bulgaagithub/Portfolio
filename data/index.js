@@ -231,7 +231,7 @@ const workExperiences = {
       role: "Software Developer",
       company: "Vadda LLC",
       //   companylogo: require("./assets/images/facebookLogo.png"),
-      date: "February 2020 – Present",
+      date: "October 2020 – Present",
       desc: "",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
