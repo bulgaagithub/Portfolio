@@ -18,7 +18,7 @@ import {
 } from "react-icons/fa";
 
 // Navigation Links
-const Links = [{ name: "Skills", link: "#skills" }, { name: "Work Experiences", link: "#experiences" }, { name: "Projects", link: "#projects" }, { name: "Blog", link: "#blog" }];
+const Links = [{ name: "Skills", link: "#skills" }, { name: "Work Experiences", link: "#experiences" }, { name: "Projects", link: "#projects" }, { name: "Blog", link: "#blog" }, { name: "Certifications", link: "#certifications" }];
 const MainLogo = 'EB'
 
 const illustration = {
@@ -231,7 +231,40 @@ const workExperiences = {
       role: "Software Developer",
       company: "Vadda LLC",
       //   companylogo: require("./assets/images/facebookLogo.png"),
-      date: "October 2020 – Present",
+      date: "October 2020 – February 2021",
+      desc: "",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      ],
+    },
+    {
+      role: "Software Developer",
+      company: "iHotel LLC",
+      //   companylogo: require("./assets/images/facebookLogo.png"),
+      date: "February 2021 – December 2021",
+      desc: "",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      ],
+    },
+    {
+      role: "Software Developer",
+      company: "Fibo Global LLC",
+      //   companylogo: require("./assets/images/facebookLogo.png"),
+      date: "December 2021 – May 2022",
+      desc: "",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      ],
+    },
+    {
+      role: "Software Engineer",
+      company: "Mobicom Corporation LLC",
+      //   companylogo: require("./assets/images/facebookLogo.png"),
+      date: "May 2022 – July 2023",
       desc: "",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -315,6 +348,16 @@ const projects = {
             ),
         }
       ],
+    },
+    {
+      //   image: require("./assets/images/nextuLogo.webp"),
+      projectName: "iTravel",
+      projectDesc:
+        "Travel news website. Especially around Mongolia",
+      url: "",
+      tech: ["Next.js", "Typescript", "React", "Tailwind"],
+      isMobile: false,
+      url: "https://itravel.mn",
     },
   ],
   display: true, // Set false to hide this section, defaults to true
@@ -434,6 +477,42 @@ const contactInfo = {
   email_address: "erdenebulgandeveloper@gmail.com",
 };
 
+// Certificate
+const certificates = {
+  title: "Certificates",
+  data: [
+    {
+      title: "AWS Certified Solutions Architect – Associate",
+      image:
+        "https://images.credly.com/size/220x220/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+      from: {
+        month: "July",
+        year: 2023,
+      },
+      to: {
+        month: "January",
+        year: 2026,
+      },
+      url: "https://www.credly.com/badges/13e40e00-3c08-4a39-93c0-2ac7e3d80f94/public_url"
+    },
+    {
+      title: "AWS Certified Cloud Practitioner",
+      image:
+        "https://images.credly.com/size/220x220/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+      from: {
+        month: "January",
+        year: 2023,
+      },
+      to: {
+        month: "January",
+        year: 2026,
+      },
+      url: "https://www.credly.com/badges/31894ec8-e5da-4cff-9dc4-7b50e07c611c/public_url"
+    },
+  ],
+};
+
+
 export {
   illustration,
   greeting,
@@ -444,6 +523,7 @@ export {
   workExperiences,
   openSource,
   projects,
+  certificates,
   contactInfo,
   Links,
   MainLogo,

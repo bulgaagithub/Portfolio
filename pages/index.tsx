@@ -13,6 +13,7 @@ import DisplayLottie from '../components/Intro/DisplayLottie'
 import Greeting from '../components/Intro/Greeting'
 // Data
 import { illustration } from '../data'
+import Certifications from '../components/Certifications'
 
 const Home: NextPage = () => {
     return (
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
                 <Skills />
                 <Experiences />
                 <Projects />
+                <Certifications />
             </Layout>
             <ScrollTop />
         </>
