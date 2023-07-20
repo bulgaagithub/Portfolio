@@ -19,7 +19,7 @@ import {
 
 // Navigation Links
 const Links = [{ name: "Skills", link: "#skills" }, { name: "Work Experiences", link: "#experiences" }, { name: "Projects", link: "#projects" }, { name: "Blog", link: "#blog" }, { name: "Certifications", link: "#certifications" }];
-const MainLogo = 'EB'
+const MainLogo = 'Erdenebulgan'
 
 const illustration = {
   animated: true, // set to false to use static SVG
